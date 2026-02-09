@@ -1,0 +1,112 @@
+body {
+  background-color: #F7F9FC;
+  font-family: "Lora";
+  text-align: center;
+}
+h1,h2, .bouton-bleu, .follow{
+  font-family: "Roboto";
+  color: #575F7D;
+}
+
+img{
+
+  width: auto;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color:#7ECE90;
+}
+
+#introduction {
+  margin-bottom: 40px;
+}
+.bouton-bleu {
+  background-color: #6B72E1;
+  color:#ffffff;
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+.bouton-bleu:hover{
+  background-color: #000000;
+}
+
+.follow {
+  font-weight: 400;
+}
+
+p {
+  color: #575F7D;
+}
+
+.card {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  margin: 20px 0px;
+  border-radius: 5px;
+  border: 1px;
+  padding: 40px;
+}
+.container {
+  width:700px;
+  margin: 40px auto;
+}
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+ul {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  padding-inline-start: 40px;
+}
+.list-inline li{
+  display: inline;
+}
+li{
+  padding: 10px;
+}
+
+.reseau {
+  font-size: 50px;
+  color: #e6e6e6;
+}
+.reseau :hover{
+  color: #000000;
+}
+.reseau,.bouton-bleu {
+  transition: all 0.5s ease;
+}
+.reseau :hover, .bouton-bleu:hover {
+  transition-duration: 0.4s;
+}
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .container {
+    width: 300px;
+  }
+  img{
+    border-radius: 5px;
+  }
+  .list-inline li{
+    display:block;
+  }
+}
