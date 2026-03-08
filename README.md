@@ -1,4 +1,4 @@
-# Salut 👋, moi c’est Mickael
+# Salut 👋, c’est Mickael 😎
 
 💻 **Développeur Fullstack en reconversion**, passionné par la création d’applications web utiles et centrées sur l’utilisateur.
 
@@ -28,9 +28,9 @@ J’aime construire des produits simples, performants et utiles pour résoudre d
 
 Voici quelques projets sur lesquels je travaille :
 
-- 🧠 Applications web intégrant de l'IA  
-- 📱 Applications fullstack avec Ruby on Rails  
-- ⚡ Outils d’automatisation  
+- <a href="https://ai-assistant-mtremauville-c6ae19835be6.herokuapp.com/">Padel Maestro</a> 🧠 Applications web intégrant de l'IA 
+- PokePlant - "Pour les plantes qui ne veulent pas mourir" 📱 Applications fullstack avec Ruby on Rails  
+- ⚡ Mon blog <a href="https://tremic.fr">tremic</a>
 
 <br>
 
@@ -43,17 +43,10 @@ Voici quelques projets sur lesquels je travaille :
 
 <br>
 
-# 📊 Statistiques GitHub
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=TON_USERNAME&show_icons=true)
-
-![Top Langages](https://github-readme-stats.vercel.app/api/top-langs/?username=TON_USERNAME&layout=compact)
-
-
 # 📫 Me contacter
 
 <p>
-  <a href="https://www.linkedin.com/in/TON-LINKEDIN/">
+  <a href="https://www.linkedin.com/in/mickael-tremauville/">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
   </a>
 </p>
