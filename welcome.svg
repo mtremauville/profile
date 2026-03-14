@@ -11,91 +11,57 @@
 }
 
 .body{
-  --blue:#2563EB;
-  --gray:#1F2937;
-  --white:#FFFFFF;
-  --terminal-green:#27C93F;
-
   height:400px;
   width:100%;
   display:flex;
   align-items:center;
   justify-content:center;
-  background:#000000;
-  border:8px solid var(--blue);
-  
-  /* Ajout de la lueur néon Siri */
+  background:#050505; /* Noir profond pour faire ressortir la lueur */
+  border:8px solid #2563EB;
   position: relative;
   overflow: hidden;
-}
-
-/* L'élément pour l'effet de lueur */
-.siri-glow {
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  border-radius: 50%;
-  
-  /* Dégradé radial animé pour l'effet mouvant */
-  background: radial-gradient(
-    circle at center, 
-    #2563EB 0%,     /* Bleu au centre */
-    #1F2937 30%,    /* Gris */
-    #000000 60%     /* Noir sur les bords */
-  );
-  
-  /* Floutage pour la lueur */
-  filter: blur(40px);
-  
-  /* Animation du mouvement */
-  animation: siriMove 10s ease-in-out infinite;
-  
-  /* Assurer que l'élément est derrière le terminal */
-  z-index: -1;
 }
 
 .container{
   width:80%;
   max-width:520px;
-  
-  /* Pour que le terminal soit bien par-dessus la lueur */
   position: relative;
-  z-index: 1;
+  z-index: 1; 
 }
 
 .terminal{
-  background:var(--gray);
-  color:var(--white);
-  border-radius:10px;
-  overflow:hidden;
-  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+  background: rgba(31, 41, 55, 0.95); /* Presque opaque */
+  color: #FFFFFF;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.1);
+
+  /* --- LA LUEUR SÉLECTIVE --- */
+  /* Combinaison d'ombres pour l'effet néon Siri localisé */
+  box-shadow: 
+    0 0 15px rgba(37, 99, 235, 0.5),   /* Lueur bleue interne/proche */
+    0 0 30px rgba(168, 85, 247, 0.4),  /* Lueur violette moyenne */
+    0 0 45px rgba(236, 72, 153, 0.3);  /* Lueur rose externe/lointaine */
   
-  /* Pour l'effet de flou subtil sur le terminal */
-  backdrop-filter: blur(5px); 
+  /* Animation de la lueur pour un effet "pulsation" discret */
+  animation: siriPulse 4s ease-in-out infinite;
 }
 
 .terminal-header{
   height:32px;
-  background:#2d3748;
+  background: rgba(45, 55, 72, 0.95);
   display:flex;
   align-items:center;
   padding-left:12px;
   gap:8px;
 }
 
-.circle{
-  width:12px;
-  height:12px;
-  border-radius:50%;
-}
-
+.circle{ width:12px; height:12px; border-radius:50%; }
 .red{ background:#FF5F56; }
 .yellow{ background:#FFBD2E; }
 .green-dot{ background:#27C93F; }
 
-.terminal-body{
-  padding:30px;
-}
+.terminal-body{ padding:30px; }
 
 .line{
   font-size:18px;
@@ -103,45 +69,41 @@
   white-space:nowrap;
   overflow:hidden;
   width:0;
-  animation:typing 2s steps(30,end) forwards;
+  animation: typing 2s steps(30,end) forwards;
 }
 
-.line:nth-child(2){ animation-delay:2s; }
+.line:nth-child(2){ animation-delay: 2s; }
 .line:nth-child(3){ 
-  animation-delay:4s; 
+  animation-delay: 4s; 
   display: flex;
   align-items: center;
 }
 
-/* Couleur verte pour le texte */
-.text-green{
-  color: var(--terminal-green);
-}
+.text-green{ color: #27C93F; font-weight: bold; }
 
 @keyframes typing{
-  from{width:0}
-  to{width:100%}
+  from{ width: 0; }
+  to{ width: 100%; }
 }
 
-/* Animation de clignotement par opacité */
 @keyframes blink{
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
 
-/* Animation du mouvement de la lueur Siri */
-@keyframes siriMove {
+/* Animation de pulsation discrète pour la lueur */
+@keyframes siriPulse {
   0%, 100% {
-    transform: translate(-25%, -25%) rotate(0deg);
-  }
-  25% {
-    transform: translate(-25%, -10%) rotate(5deg);
+    box-shadow: 
+      0 0 15px rgba(37, 99, 235, 0.5),
+      0 0 30px rgba(168, 85, 247, 0.4),
+      0 0 45px rgba(236, 72, 153, 0.3);
   }
   50% {
-    transform: translate(-10%, -25%) rotate(-5deg);
-  }
-  75% {
-    transform: translate(-10%, -10%) rotate(0deg);
+    box-shadow: 
+      0 0 20px rgba(37, 99, 235, 0.6),
+      0 0 40px rgba(168, 85, 247, 0.5),
+      0 0 60px rgba(236, 72, 153, 0.4);
   }
 }
   
@@ -149,15 +111,13 @@
   display:inline-block;
   width:10px;
   height:20px;
-  background: var(--terminal-green);
+  background: #27C93F;
   margin-left:5px;
   animation: blink 1s step-end infinite;
 }
 </style>
 
 <div class="body">
-  <div class="siri-glow"></div>
-  
   <div class="container">
     <div class="terminal">
       <div class="terminal-header">
