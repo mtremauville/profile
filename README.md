@@ -12,9 +12,8 @@ Je m’intéresse particulièrement à :
 
 J’aime construire des produits performants qui résolvent des **problèmes concrets**.
 
----
 
-# 🚀 Technologies
+## 🚀 Technologies
 
 ### 🧠 Langages
 
@@ -86,7 +85,7 @@ J’aime construire des produits performants qui résolvent des **problèmes con
   <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"/>
 </p>
 
-# ⭐ Featured Projects
+## ⭐ Featured Projects
 
 ### 🧠 Padel Maestro
 
@@ -147,19 +146,19 @@ https://tremic.fr
 
 ---
 
-# 📊 GitHub Stats
+## 📊 GitHub Stats
 
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=mtremauville&show_icons=true&theme=tokyonight)
 
 ---
 
-# 🧠 Top Languages
+## 🧠 Top Languages
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=mtremauville&layout=compact&theme=tokyonight)
 
 ---
 
-# 📫 Me contacter
+## 📫 Me contacter
 
 <p>
   <a href="https://www.linkedin.com/in/mickael-tremauville/">
