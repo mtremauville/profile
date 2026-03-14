@@ -201,3 +201,48 @@ p {
 .card {
   box-shadow: 0 0 5px #FFFFFF, 0 0 15px rgba(37, 99, 235, 0.4) !important;
 }
+/* --- UNIFORMISATION DES SHIELDS --- */
+.shields-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.shields-row.left {
+  justify-content: flex-start; /* Aligné à gauche pour les catégories */
+}
+
+.shields-row img {
+  height: 24px; /* Hauteur fixe pour que le texte interne soit à ~10px */
+  border-radius: 0 !important; /* Rectangle pur */
+  box-shadow: none !important; /* Pas d'ombre sur les badges */
+  border: none !important;
+  transition: transform 0.2s ease;
+}
+
+.shields-row img:hover {
+  transform: translateY(-2px);
+}
+
+/* --- TITRES DES CATÉGORIES --- */
+.tech-category h3 {
+  font-size: 13px;
+  text-align: left;
+  color: #9CA3AF;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  border-left: 3px solid #2563EB;
+  padding-left: 10px;
+}
+
+/* --- SUPPRESSION DU ROSE SUR LES CARDS --- */
+.card {
+  box-shadow: 
+    0 0 5px #FFFFFF,
+    0 0 15px rgba(37, 99, 235, 0.4), 
+    0 0 30px rgba(168, 85, 247, 0.2) !important;
+}
