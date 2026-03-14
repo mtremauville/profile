@@ -78,7 +78,8 @@ J’aime construire des produits performants qui résolvent des **problèmes con
 Assistant IA pour les joueurs de padel permettant d'obtenir des conseils personnalisés et d'analyser les performances.
 
 Technologies :
-Ruby on Rails • OpenAI API • PostgreSQL
+
+<img src="https://img.shields.io/badge/Ruby_on_Rails-D30001?style=for-the-badge&logo=rubyonrails&logoColor=white"/><img src="https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white"/><img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/>
 
 ---
 
