@@ -47,6 +47,10 @@ J’aime construire des produits performants qui résolvent des **problèmes con
 <img src="https://img.shields.io/badge/Image_AI-FF69B4?style=for-the-badge"/>
 </p>
 
+### Cloud
+<p>
+  <img src="https://img.shields.io/badge/Digital_Ocean-0080FF?style=for-the-badge&logo=DigitalOcean&logoColor=white"/>
+</p>
 <!--### 🔎 Search & Data
 
 <p>
@@ -73,6 +77,8 @@ J’aime construire des produits performants qui résolvent des **problèmes con
 <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
 <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
 <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white"/>
+<img src="https://img.shields.io/badge/Digital_Ocean-0080FF?style=for-the-badge&logo=DigitalOcean&logoColor=white"/>
+<img src="https://img.shields.io/badge/Hostinger-673DE6?style=for-the-badge&logo=hostinger&logoColor=white"/>
 </p>
 
 # ⭐ Featured Projects
