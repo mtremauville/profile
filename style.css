@@ -31,21 +31,21 @@ p {
   line-height: 1.6;
 }
 
-/* --- L'EFFET NEON GLOWTIME SUR LES CARTES --- */
+/* --- L'EFFET NEON GLOWTIME SUR LES CARTES (SANS ROSE) --- */
 .card {
-  background-color: rgba(17, 24, 39, 0.8); /* Semi-transparent */
+  background-color: rgba(17, 24, 39, 0.95); /* Presque opaque */
   margin: 40px 0;
   border-radius: 15px;
   padding: 40px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px); /* Effet verre dépoli */
   
-  /* Lueur néon multicouche (Blanc -> Bleu -> Violet -> Rose) */
+  /* --- LUEUR NÉON AJUSTÉE (ROSE ENLEVÉ) --- */
+  /* Cœur blanc -> Lueur Bleue -> Lueur Violette */
   box-shadow: 
-    0 0 5px #FFFFFF,
-    0 0 15px rgba(37, 99, 235, 0.5), 
-    0 0 30px rgba(168, 85, 247, 0.4),
-    0 0 45px rgba(236, 72, 153, 0.2);
+    0 0 5px #FFFFFF,          /* Le cœur blanc brillant */
+    0 0 15px rgba(37, 99, 235, 0.5), /* Lueur bleue proche (dominante) */
+    0 0 30px rgba(168, 85, 247, 0.3); /* Lueur violette lointaine (réduite) */
   
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -55,13 +55,13 @@ p {
   box-shadow: 
     0 0 8px #FFFFFF,
     0 0 20px rgba(37, 99, 235, 0.6), 
-    0 0 40px rgba(168, 85, 247, 0.5),
-    0 0 60px rgba(236, 72, 153, 0.3);
+    0 0 40px rgba(168, 85, 247, 0.4);
 }
 
-/* Bouton style Siri/Apple */
+/* --- BOUTON SIRI-STYLE (SANS ROSE) --- */
 .bouton-bleu {
   display: inline-block;
+  /* Dégradé centré sur le bleu et le violet uniquement */
   background: linear-gradient(135deg, #2563EB, #a855f7);
   color: #ffffff;
   padding: 12px 24px;
@@ -73,9 +73,10 @@ p {
 }
 
 .bouton-bleu:hover {
-  background: linear-gradient(135deg, #a855f7, #ec4899);
+  /* Au survol, on intensifie juste le violet, sans aller vers le rose */
+  background: linear-gradient(135deg, #a855f7, #6B72E1);
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(236, 72, 153, 0.6);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
 }
 
 /* Réseaux Sociaux */
@@ -109,65 +110,4 @@ p {
 @media (max-width: 540px) {
   .container { width: 95%; }
   .list-inline { flex-direction: column; align-items: center; }
-}
-/* Style des badges technologiques */
-.badge-container {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.badge {
-  padding: 5px 15px;
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: 1px solid rgba(255,255,255,0.2);
-}
-
-.badge.rails { background: #D30001; color: white; }
-.badge.js { background: #F7DF1E; color: black; }
-.badge.ai { background: #FF6F00; color: white; }
-
-/* Style des projets */
-.project-item {
-  text-align: left;
-  padding: 15px;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-  margin-bottom: 10px;
-}
-
-.project-item h3 {
-  margin: 0;
-  color: #7ECE90; /* Couleur verte pour le succès/code */
-}
-
-.project-item small {
-  color: #6B72E1;
-  font-family: monospace;
-}
-
-/* Grille technique */
-.tech-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.tech-grid h4 {
-  margin-bottom: 5px;
-  color: #FFFFFF;
-  font-size: 14px;
-}
-
-.tech-grid p {
-  font-size: 13px;
-}
-
-@media (max-width: 600px) {
-  .tech-grid { grid-template-columns: 1fr; }
 }
