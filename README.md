@@ -71,40 +71,37 @@ J’aime construire des produits performants qui résolvent des **problèmes con
 </p>
 ---
 
-# 🔭 Projets
+# ⭐ Featured Projects
 
 ### 🧠 Padel Maestro
-Assistant IA pour les joueurs de padel.
+
+Assistant IA pour les joueurs de padel permettant d'obtenir des conseils personnalisés et d'analyser les performances.
 
 Technologies :
-- Ruby on Rails
-- OpenAI API
-- PostgreSQL
+Ruby on Rails • OpenAI API • PostgreSQL
 
 ---
 
 ### 🌱 PokePlant
-Application web pour aider les utilisateurs à prendre soin de leurs plantes.
+
+Application web collaborative pour aider les utilisateurs à prendre soin de leurs plantes.
 
 Technologies :
-- Ruby on Rails
-- JavaScript
-- PostgreSQL
+Ruby on Rails • JavaScript • PostgreSQL
 
-GitHub :
+🔗 Repository  
 https://github.com/Floopidou/pokeplant
 
 ---
 
 ### ✍️ Tremic
-Blog personnel autour de la productivité et de la tech.
+
+Blog personnel dédié à la productivité, la tech et l'écosystème Apple.
 
 Technologies :
-- NodeJS
-- HTML
-- CSS
-- JavaScript
+NodeJS • HTML • CSS • JavaScript
 
+🌍 Website  
 https://tremic.fr
 
 ---
