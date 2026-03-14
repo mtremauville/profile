@@ -16,7 +16,7 @@
   display:flex;
   align-items:center;
   justify-content:center;
-  /* background:#0c1117; Noir très profond pour le contraste maximal */
+  background:#020202; /* Noir très profond pour le contraste maximal */
   position: relative;
   overflow: hidden;
 }
@@ -26,6 +26,10 @@
   max-width:520px;
   position: relative;
   z-index: 1; 
+
+  /* --- ANIMATION ZOOM IN (AJOUTÉE) --- */
+  /* Animation d'échelle et d'opacité au chargement */
+  animation: zoomIn 1.5s ease-out forwards;
 }
 
 .terminal{
@@ -35,17 +39,17 @@
   overflow: hidden;
   border: 1px solid rgba(255,255,255,0.1);
 
-  /* --- L'EFFET NÉON "GLOWTIME" AVEC ROSE RÉDUIT (AJUSTÉ) --- */
-  /* Superposition d'ombres : du blanc brillant au cœur vers les couleurs diffuses */
+  /* --- L'EFFET NÉON "GLOWTIME" AVEC ROSE RÉDUIT (TOUJOURS PRÉSENT) --- */
   box-shadow: 
     0 0 5px #FFFFFF,      /* Le cœur blanc brillant */
     0 0 10px #FFFFFF,     /* Deuxième couche de blanc pour l'intensité */
     0 0 20px #2563EB,    /* Lueur bleue proche (dominante) */
     0 0 35px #a855f7,    /* Lueur violette moyenne */
-    0 0 45px rgba(236, 72, 153, 0.2);  /* --- ROSE RÉDUIT ET SUBTIL --- */
+    0 0 45px rgba(236, 72, 153, 0.2);  /* Rose RÉDUIT ET SUBTIL */
   
   /* Animation de pulsation discrète pour l'effet néon vivant */
   animation: neonPulse 3s ease-in-out infinite;
+  /* Note: l'animation de pulsation commencera après l'animation de zoomIn */
 }
 
 .terminal-header{
@@ -73,9 +77,11 @@
   animation: typing 2s steps(30,end) forwards;
 }
 
-.line:nth-child(2){ animation-delay: 2s; }
-.line:nth-child(3){ 
-  animation-delay: 4s; 
+/* Synchronisation de la frappe après le zoom */
+.line:nth-child(1) { animation-delay: 1.5s; } /* Commence après le zoom */
+.line:nth-child(2) { animation-delay: 3.5s; }
+.line:nth-child(3) { 
+  animation-delay: 5.5s; 
   display: flex;
   align-items: center;
 }
@@ -84,6 +90,18 @@
 
 @keyframes typing{ from{ width: 0; } to{ width: 100%; } }
 @keyframes blink{ 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+/* --- ANIMATION ZOOM IN (DÉFINIE) --- */
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5); /* Commence à la moitié de la taille */
+    opacity: 0; /* Complètement transparent */
+  }
+  100% {
+    transform: scale(1); /* Taille normale */
+    opacity: 1; /* Complètement visible */
+  }
+}
 
 /* Animation de pulsation pour l'effet néon */
 @keyframes neonPulse {
