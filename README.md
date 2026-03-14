@@ -11,6 +11,7 @@ Je m’intéresse particulièrement à :
 - les **applications SaaS simples et utiles**
 
 J’aime construire des produits performants qui résolvent des **problèmes concrets**.
+
 <br>
 
 ## 🚀 Technologies
@@ -77,6 +78,8 @@ J’aime construire des produits performants qui résolvent des **problèmes con
   <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white"/>
   <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"/>
 </p>
+
+<br>
 
 ## ⭐ Featured Projects
 
