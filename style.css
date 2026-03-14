@@ -1,95 +1,98 @@
-/* Configuration de la Grille Bento */
-.container {
-  max-width: 1000px; /* Plus large pour le mode Bento */
-  margin: 40px auto;
-  padding: 0 20px;
+body {
+  background-color: #020202;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 20px;
 }
 
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* LA GRILLE BENTO */
 .bento-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colonnes sur desktop */
-  grid-auto-rows: minmax(180px, auto);
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
+  grid-gap: 20px;
+  grid-auto-rows: minmax(150px, auto);
 }
 
-/* Style de base des cartes Bento */
+/* CARTES STYLE BENTO */
 .card {
-  background-color: rgba(17, 24, 39, 0.95);
+  background: rgba(17, 24, 39, 0.8);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px; /* Bords arrondis style Apple */
-  padding: 25px;
-  margin: 0; /* Plus de marge extérieure, c'est la grille qui gère le gap */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 24px;
+  padding: 24px;
+  backdrop-filter: blur(10px);
   box-shadow: 0 0 5px #FFFFFF, 0 0 15px rgba(37, 99, 235, 0.3);
+  transition: all 0.3s ease;
 }
 
 .card:hover {
-  transform: scale(1.02);
+  transform: translateY(-5px);
   box-shadow: 0 0 10px #FFFFFF, 0 0 25px rgba(37, 99, 235, 0.5);
 }
 
-/* Positionnement spécifique des blocs */
-.profile-bento {
-  grid-column: span 2; /* Prend 2 colonnes */
-  text-align: left;
-  flex-direction: row;
-  align-items: center;
-  gap: 30px;
-}
+/* POSITIONNEMENT DES BLOCS */
+.profile-card { grid-column: span 2; display: flex; align-items: center; gap: 20px; }
+.projects-card { grid-row: span 2; } /* Prend toute la hauteur à droite */
+.stats-card { grid-column: span 2; text-align: center; }
 
-.project-bento {
-  grid-row: span 2; /* Prend 2 rangées en hauteur */
-  justify-content: flex-start;
-}
-
-.stats-bento {
-  grid-column: span 2;
-}
-
-/* Ajustements éléments internes */
+/* ÉLÉMENTS INTERNES */
 .profile-img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  box-shadow: 0 0 15px rgba(37, 99, 235, 0.5);
+  border: 2px solid #2563EB;
 }
 
-.mini-project {
-  margin-bottom: 20px;
+h1 { margin: 0; font-size: 1.8rem; }
+h3 { font-size: 1rem; color: #9CA3AF; margin-bottom: 15px; }
+
+.shields-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.shields-grid img {
+  height: 22px;
+  border-radius: 0 !important;
+}
+
+.bento-project {
+  margin-bottom: 15px;
   padding-bottom: 10px;
   border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
-.shields-row.center {
-  justify-content: center;
+.bouton-siri {
+  display: inline-block;
+  background: linear-gradient(135deg, #2563EB, #a855f7);
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  margin-top: 10px;
 }
 
-.shields-row img {
-  height: 22px;
-  border-radius: 0; /* Rectangles parfaits comme demandé */
-  margin: 4px;
+.stats-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
 }
 
-/* --- RESPONSIVE --- */
-
-/* Tablettes : on passe à 2 colonnes */
+/* RESPONSIVE */
 @media (max-width: 900px) {
-  .bento-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  .bento-grid { grid-template-columns: repeat(2, 1fr); }
+  .projects-card { grid-row: span 1; grid-column: span 2; }
 }
 
-/* Mobiles : tout en 1 colonne */
 @media (max-width: 600px) {
-  .bento-grid {
-    grid-template-columns: 1fr;
-  }
-  .profile-bento, .stats-bento {
-    grid-column: span 1;
-    flex-direction: column;
-    text-align: center;
-  }
+  .bento-grid { grid-template-columns: 1fr; }
+  .profile-card, .stats-card, .projects-card { grid-column: span 1; }
+  .profile-card { flex-direction: column; text-align: center; }
 }
