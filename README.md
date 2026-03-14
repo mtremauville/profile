@@ -1,8 +1,16 @@
 # Salut 👋, c’est Mickael 😎
 
-💻 **Développeur Fullstack & IA**
+🧠 Fullstack developer qui construit des **applications web augmentées par l’IA**.
 
-Après une formation intensive **AI Software Developer au Wagon**, je développe des applications web modernes avec **Ruby on Rails**, **JavaScript** et des **LLM (Large Language Models)**.
+Stack principale :
+<p>
+  <img src="https://img.shields.io/badge/Ruby_on_Rails-D30001?style=for-the-badge&logo=rubyonrails&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/LLM-FF6F00?style=for-the-badge"/>
+</p>
+J’aime transformer des idées simples en **produits utiles et intelligents**.
+
+Après une formation intensive **AI Software Developer au Wagon** 🚂, je développe des applications web modernes avec **Ruby on Rails**, **JavaScript** et des **LLM (Large Language Models)**.
 
 Je m’intéresse particulièrement à :
 
@@ -41,7 +49,7 @@ J’aime construire des produits performants qui résolvent des **problèmes con
   <img src="https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white"/>
   <img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white"/>
   <img src="https://img.shields.io/badge/Claude_Code-000000?style=for-the-badge&logo=anthropic&logoColor=white"/>
-  <img src="https://img.shields.io/badge/LLM_Apps-FF6F00?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/LLM-FF6F00?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/AI_Agents-000000?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Text_AI-2E8B57?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Image_AI-FF69B4?style=for-the-badge"/>
