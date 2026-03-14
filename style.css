@@ -96,3 +96,53 @@ h3 { font-size: 1rem; color: #9CA3AF; margin-bottom: 15px; }
   .profile-card, .stats-card, .projects-card { grid-column: span 1; }
   .profile-card { flex-direction: column; text-align: center; }
 }
+/* --- SECTION TECH BENTO --- */
+.bento-tech-main {
+  grid-column: span 2; /* Largeur sur 2 colonnes dans la grille principale */
+  text-align: left;
+}
+
+.tech-category {
+  margin-bottom: 25px;
+}
+
+.tech-category h3 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #9CA3AF;
+  margin-bottom: 12px;
+  border-left: 2px solid #2563EB;
+  padding-left: 10px;
+}
+
+/* Alignement des shields en grille flexible */
+.shields-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Uniformisation de la taille (visuel 10px) */
+.shields-grid img {
+  height: 24px; /* Hauteur fixe pour égaliser la police interne */
+  border-radius: 0 !important; /* Rectangle strict */
+  box-shadow: none !important;
+}
+
+/* Mise en page en ligne pour les petites catégories */
+.tech-row-split {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* --- SUPPRESSION DU ROSE (Rappel) --- */
+.card {
+  background: rgba(17, 24, 39, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 
+    0 0 5px #FFFFFF, 
+    0 0 15px rgba(37, 99, 235, 0.3), 
+    0 0 30px rgba(168, 85, 247, 0.2); /* Bleu et Violet uniquement */
+}
