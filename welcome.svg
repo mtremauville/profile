@@ -1,227 +1,160 @@
 <svg fill="none" viewBox="0 0 600 400" width="600" height="400" xmlns="http://www.w3.org/2000/svg">
-  <foreignObject width="100%" height="100%">
-  <div xmlns="http://www.w3.org/1999/xhtml">
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        color: inherit;
-        text-decoration: none;
-        list-style: none;
-        outline: none;
-        box-sizing: border-box;
-      }
+<foreignObject width="100%" height="100%">
+<div xmlns="http://www.w3.org/1999/xhtml">
 
-      .body {
-        --color-main: #ff9b71;
-        --color-primary: #ff4444;
-        --color-secondary: #e8e677;
-        --color-background: #0d1117;
-        --color-link: #fef29e;
-        --color-link-active: #ff4444;
+<style>
 
-        height: 400px;
-        width: 100%;
-        text-transform: uppercase;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
 
-        background-image: radial-gradient(var(--color-main), var(--color-primary), var(--color-secondary));
-        animation: border 5s linear infinite;
-        background-size: 200% 200%;
-        background-position: 0 0;
-        border: 24px solid;
-        border-color: var(--color-background);
-      }
+.body{
 
-      .container {
-        background: var(--color-background);
-        height: calc(100% - 10px);
-        width: calc(100% - 10px);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
+--blue:#2563EB;
+--gray:#1F2937;
+--white:#FFFFFF;
 
-      h1 {
-        font-size: 3.5rem;
-        font-weight: 800;
-        font-family: "Open Sans", sans-serif;
-        text-align: center;
-      }
-      h1 a {
-        display: block;
-      }
-      h1 a span {
-        overflow: hidden;
-        transition: transform 0.25s cubic-bezier(0.5, 0, 0.25, 1.25);
-        display: block;
-      }
-      h1 a span em {
-        display: block;
-      }
-      h1 a span:nth-child(1) {
-        color: var(--color-main);
-        margin-bottom: 6px;
-        animation: intro 1.5s cubic-bezier(0.5, 0, 0.25, 1.3) -1s 1;
-      }
-      h1 a span:nth-child(1) em {
-        margin-top: 30px;
-        line-height: 0rem;
-        margin-bottom: -10px;
-      }
-      h1 a span:nth-child(2) {
-        color: var(--color-primary);
-        margin-bottom: 6px;
-        animation: intro 1.5s cubic-bezier(0.5, 0, 0.25, 1.2) -0.9s 1;
-      }
-      h1 a span:nth-child(2) em {
-        margin-top: -6px;
-        line-height: 1rem;
-      }
-      h1 a span:nth-child(3) {
-        color: var(--color-secondary);
-        animation: intro 1.5s cubic-bezier(0.5, 0, 0.25, 1.1) -0.8s 1;
-      }
-      h1 a span:nth-child(3) em {
-        margin-top: -36px;
-        line-height: 3rem;
-      }
-      h1 a:hover span,
-      h1 a:focus span {
-        transition: transform 0.125s cubic-bezier(0.5, 0, 0.25, 2.5);
-      }
-      h1 a:hover span:nth-child(1),
-      h1 a:focus span:nth-child(1) {
-        transform: translateX(1vw);
-      }
-      h1 a:hover span:nth-child(3),
-      h1 a:focus span:nth-child(3) {
-        transform: translateX(-1vw);
-      }
+height:400px;
+width:100%;
 
-      .items {
-        margin-top: 24px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
-      ul {
-        font-size: 16px;
-        line-height: 26px;
-        color: var(--color-main);
-        font-weight: 700;
-        font-family: "Open Sans", sans-serif;
-      }
-      ul li {
-        display: flex;
-        letter-spacing: 0.125vw;
-      }
-      ul li a {
-        margin-left: 5px;
-      }
-      ul li a:hover,
-      ul li a:focus {
-        color: var(--color-link-active);
-      }
-      ul li a {
-        color: var(--color-link);
-      }
+display:flex;
+align-items:center;
+justify-content:center;
 
-      .hi {
-        display: inline-block;
-        transform-origin: 70% 70%;
-        animation: hi 3s linear -2s infinite;
-      }
+background:var(--white);
+border:8px solid var(--blue);
 
-      @keyframes border {
-        0% { background-position: 0 0; }
-        20% { background-position: 100% 0; }
-        40% { background-position: 100% 100%; }
-        60% { background-position: 0 100%; }
-        100% { background-position: 0 0; }
-      }
+}
 
-      @keyframes hi {
-        25% { transform: rotate(0deg); }
-        30% { transform: rotate(15deg); }
-        35% { transform: rotate(0deg); }
-        40% { transform: rotate(15deg); }
-        45% { transform: rotate(0deg); }
-        80% { transform: rotate(0deg); }
-        85% { transform: rotate(15deg); }
-        90% { transform: rotate(0deg); }
-        95% { transform: rotate(15deg); }
-        100% { transform: rotate(0deg); }
-      }
+.container{
+width:80%;
+max-width:520px;
+}
 
-      @keyframes intro {
-        0%, 75% { transform: translateX(-100vw); }
-        100% { transform: translateX(0); }
-      }
+.terminal{
 
-      @keyframes fade {
-        0%, 75% { opacity: 0; }
-        100% { opacity: 1; }
-      }
+background:var(--gray);
+color:var(--white);
 
-      @media (prefers-color-scheme: light) {
-        .body {
-          --color-main: #9B5DE5;
-          --color-primary: #F15BB5;
-          --color-secondary: #00BBF9;
-          --color-background: #ffffff;
-          --color-link: #00BBF9;
-          --color-link-active: #F15BB5;
-        }
-      }
+border-radius:10px;
+overflow:hidden;
 
-      @media (prefers-reduced-motion) {
-        .body {
-          animation: none;
-        }
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
 
-        .hi {
-          animation: none;
-        }
+}
 
-        ul li {
-          opacity: 1;
-          animation: none;
-        }
+.terminal-header{
 
-        h1 a span:nth-child(1),
-        h1 a span:nth-child(2),
-        h1 a span:nth-child(3) {
-          animation: none;
-        }
-      }
-    </style>
-    <div class='body'>
-      <div class='container'>
-        <h1>
-          <a href="https://github.com/mtremauville">
-            <span><em>Mickael</em></span>
-            <span><em>Mickael</em></span>
-            <span><em>Mickael</em></span>
-          </a>
-        </h1>
-        <section class='items'>
-          <ul>
-            <li><!--Writer &#38; -->Junior Ai Software Engineer</li>
-          </ul>
-          <!--<ul>
-            <li>at <a href="https://tremic.fr">Codons peu, condons malin</a></li>
-          </ul>-->
-          <ul>
-            <li><a href="mailto:mickael.tremauville@gmail.com" role="button"><span class='Salut'>👋</span></a></li>
-          </ul>
-        </section>
-      </div>
-    </div>
-  </div>
-  </foreignObject>
+height:32px;
+background:#2d3748;
+display:flex;
+align-items:center;
+padding-left:12px;
+gap:8px;
+
+}
+
+.circle{
+width:12px;
+height:12px;
+border-radius:50%;
+}
+
+.red{
+background:#FF5F56;
+}
+
+.yellow{
+background:#FFBD2E;
+}
+
+.green{
+background:#27C93F;
+}
+
+.terminal-body{
+padding:30px;
+}
+
+.line{
+font-size:18px;
+margin-bottom:10px;
+white-space:nowrap;
+overflow:hidden;
+width:0;
+
+animation:typing 3s steps(30,end) forwards;
+}
+
+.line:nth-child(2){
+animation-delay:3s;
+}
+
+.line:nth-child(3){
+animation-delay:6s;
+}
+
+.blue{
+color:var(--blue);
+}
+
+@keyframes typing{
+from{width:0}
+to{width:100%}
+}
+
+@keyframes blink{
+0%{border-color:var(--blue)}
+50%{border-color:transparent}
+100%{border-color:var(--blue)}
+}
+  
+.cursor{
+display:inline-block;
+width:10px;
+height:20px;
+background:var(--blue);
+margin-left:5px;
+animation:blink 1s infinite;
+}
+</style>
+
+<div class="body">
+<div class="container">
+
+<div class="terminal">
+
+<div class="terminal-header">
+<div class="circle red"></div>
+<div class="circle yellow"></div>
+<div class="circle green"></div>
+</div>
+
+<div class="terminal-body">
+
+<div class="line">
+$ whoami
+</div>
+
+<div class="line">
+Mickael Tremauville
+</div>
+
+<div class="line">
+<span class="blue">Junior AI Software Engineer</span>
+<span class="cursor"></span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+</foreignObject>
 </svg>
