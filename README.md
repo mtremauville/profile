@@ -47,11 +47,16 @@ J’aime construire des produits performants qui résolvent des **problèmes con
 <img src="https://img.shields.io/badge/Image_AI-FF69B4?style=for-the-badge"/>
 </p>
 
-### 🔎 Search & Data
+<!--### 🔎 Search & Data
 
 <p>
 <img src="https://img.shields.io/badge/Elasticsearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white"/>
 <img src="https://img.shields.io/badge/Algolia-003DFF?style=for-the-badge&logo=algolia&logoColor=white"/>
+</p>-->
+
+### CMS
+<p>
+  <img src="https://img.shields.io/badge/Ghost-000?style=for-the-badge&logo=ghost&logoColor=yellow"/><img src="https://img.shields.io/badge/Wordpress-21759B?style=for-the-badge&logo=wordpress&logoColor=white"/>
 </p>
 
 ### 🗄️ Base de données
@@ -69,7 +74,6 @@ J’aime construire des produits performants qui résolvent des **problèmes con
 <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
 <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white"/>
 </p>
----
 
 # ⭐ Featured Projects
 
