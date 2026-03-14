@@ -138,14 +138,19 @@ Technologies :
 🌍 Website  
 https://tremic.fr
 
+<br>
+
 ## 📊 GitHub Stats
 
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=mtremauville&show_icons=true&theme=tokyonight)
+
+<br>
 
 ## 🧠 Top Languages
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=mtremauville&layout=compact&theme=tokyonight)
 
+<br>
 
 ## 📫 Me contacter
 
