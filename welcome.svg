@@ -16,8 +16,7 @@
   display:flex;
   align-items:center;
   justify-content:center;
-  /* background:#050505; Noir profond */
-  /* BORDURE BLEUE RETIRÉE ICI */
+  background:#020202; /* Noir très profond pour le contraste maximal */
   position: relative;
   overflow: hidden;
 }
@@ -30,25 +29,28 @@
 }
 
 .terminal{
-  background: rgba(31, 41, 55, 0.95); /* Presque opaque */
+  background: rgba(17, 24, 39, 0.95); /* Sombre et presque opaque */
   color: #FFFFFF;
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid rgba(255,255,255,0.1);
 
-  /* --- LA LUEUR SÉLECTIVE (toujours présente) --- */
+  /* --- L'EFFET NÉON "GLOWTIME" AVEC ROSE RÉDUIT (AJUSTÉ) --- */
+  /* Superposition d'ombres : du blanc brillant au cœur vers les couleurs diffuses */
   box-shadow: 
-    0 0 15px rgba(37, 99, 235, 0.5),   /* Lueur bleue interne/proche */
-    0 0 30px rgba(168, 85, 247, 0.4),  /* Lueur violette moyenne */
-    0 0 45px rgba(236, 72, 153, 0.3);  /* Lueur rose externe/lointaine */
+    0 0 5px #FFFFFF,      /* Le cœur blanc brillant */
+    0 0 10px #FFFFFF,     /* Deuxième couche de blanc pour l'intensité */
+    0 0 20px #2563EB,    /* Lueur bleue proche (dominante) */
+    0 0 35px #a855f7,    /* Lueur violette moyenne */
+    0 0 45px rgba(236, 72, 153, 0.2);  /* --- ROSE RÉDUIT ET SUBTIL --- */
   
-  /* Animation de la lueur pour un effet "pulsation" discret */
-  animation: siriPulse 4s ease-in-out infinite;
+  /* Animation de pulsation discrète pour l'effet néon vivant */
+  animation: neonPulse 3s ease-in-out infinite;
 }
 
 .terminal-header{
   height:32px;
-  background: rgba(45, 55, 72, 0.95);
+  background: #1f2937;
   display:flex;
   align-items:center;
   padding-left:12px;
@@ -80,29 +82,26 @@
 
 .text-green{ color: #27C93F; font-weight: bold; }
 
-@keyframes typing{
-  from{ width: 0; }
-  to{ width: 100%; }
-}
+@keyframes typing{ from{ width: 0; } to{ width: 100%; } }
+@keyframes blink{ 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
 
-@keyframes blink{
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
-
-/* Animation de pulsation discrète pour la lueur */
-@keyframes siriPulse {
+/* Animation de pulsation pour l'effet néon */
+@keyframes neonPulse {
   0%, 100% {
     box-shadow: 
-      0 0 15px rgba(37, 99, 235, 0.5),
-      0 0 30px rgba(168, 85, 247, 0.4),
-      0 0 45px rgba(236, 72, 153, 0.3);
+      0 0 5px #FFFFFF,
+      0 0 10px #FFFFFF,
+      0 0 20px #2563EB,
+      0 0 35px #a855f7,
+      0 0 45px rgba(236, 72, 153, 0.2);
   }
   50% {
     box-shadow: 
-      0 0 20px rgba(37, 99, 235, 0.6),
-      0 0 40px rgba(168, 85, 247, 0.5),
-      0 0 60px rgba(236, 72, 153, 0.4);
+      0 0 7px #FFFFFF,
+      0 0 15px #FFFFFF,
+      0 0 25px #2563EB,
+      0 0 40px #a855f7,
+      0 0 55px rgba(236, 72, 153, 0.3);
   }
 }
   
@@ -117,6 +116,7 @@
 </style>
 
 <div class="body">
+  
   <div class="container">
     <div class="terminal">
       <div class="terminal-header">
