@@ -203,7 +203,7 @@
     <div class='body'>
       <div class='container'>
         <h1>
-          <a href="https://github.com/nikolalsvk">
+          <a href="https://github.com/mtremauville">
             <span><em>Mickael</em></span>
             <span><em>Mickael</em></span>
             <span><em>Mickael</em></span>
@@ -211,13 +211,13 @@
         </h1>
         <section class='items'>
           <ul>
-            <li>Writer &#38; Software Engineer</li>
+            <li><!--Writer &#38; -->Junior Ai Software Engineer</li>
           </ul>
+          <!--<ul>
+            <li>at <a href="https://tremic.fr">Codons peu, condons malin</a></li>
+          </ul>-->
           <ul>
-            <li>at <a href="https://pragmaticpineapple.com">Pragmatic Pineapple</a></li>
-          </ul>
-          <ul>
-            <li><a href="mailto:nikolaseap@gmail.com" role="button"><span class='hi'>👋</span></a></li>
+            <li><a href="mailto:mickael.tremauville@gmail.com" role="button"><span class='Salut'>👋</span></a></li>
           </ul>
         </section>
       </div>
