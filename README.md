@@ -11,6 +11,7 @@ Je m’intéresse particulièrement à :
 - les **applications SaaS simples et utiles**
 
 J’aime construire des produits performants qui résolvent des **problèmes concrets**.
+<br>
 
 ## 🚀 Technologies
 
