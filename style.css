@@ -159,3 +159,7 @@ p {
   margin-top: 0;
   color: #ffffff;
 }
+.shields-row img {
+  border-radius: 0 !important; /* Force la suppression de tout arrondi résiduel */
+  margin: 5px;
+}
