@@ -39,6 +39,8 @@ J’aime construire des produits performants qui résolvent des **problèmes con
 
 <p>
 <img src="https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white"/>
+<img src="https://img.shields.io/badge/Claude_AI-D97757?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Claude_Code-000000?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/LLM_Apps-FF6F00?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/AI_Agents-000000?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Text_AI-2E8B57?style=for-the-badge"/>
@@ -62,11 +64,11 @@ J’aime construire des produits performants qui résolvent des **problèmes con
 
 <p>
 <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"/>
+<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"/>
 <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
 <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
 <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white"/>
 </p>
-
 ---
 
 # 🔭 Projets
