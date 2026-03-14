@@ -39,8 +39,8 @@ J’aime construire des produits performants qui résolvent des **problèmes con
 
 <p>
 <img src="https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white"/>
-<img src="https://img.shields.io/badge/Claude_AI-D97757?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Claude_Code-000000?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white"/>
+<img src="https://img.shields.io/badge/Claude_Code-000000?style=for-the-badge&logo=anthropic&logoColor=white"/>
 <img src="https://img.shields.io/badge/LLM_Apps-FF6F00?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/AI_Agents-000000?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Text_AI-2E8B57?style=for-the-badge"/>
@@ -79,7 +79,7 @@ Assistant IA pour les joueurs de padel permettant d'obtenir des conseils personn
 
 Technologies :
 
-<img src="https://img.shields.io/badge/Ruby_on_Rails-D30001?style=for-the-badge&logo=rubyonrails&logoColor=white"/><img src="https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white"/><img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/>
+<img src="https://img.shields.io/badge/Ruby_on_Rails-D30001?style=for-the-badge&logo=rubyonrails&logoColor=white"/><img src="https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white"/><img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
 
 ---
 
@@ -88,7 +88,9 @@ Technologies :
 Application web collaborative pour aider les utilisateurs à prendre soin de leurs plantes.
 
 Technologies :
-Ruby on Rails • JavaScript • PostgreSQL
+
+<img src="https://img.shields.io/badge/Ruby_on_Rails-D30001?style=for-the-badge&logo=rubyonrails&logoColor=white"/><img src="https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white"/><img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+
 
 🔗 Repository  
 https://github.com/Floopidou/pokeplant
