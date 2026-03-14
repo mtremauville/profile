@@ -1,48 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Mickael Tremauville | AI Software Engineer</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>Mon Profile</title>
 </head>
 <body>
+
 <div class="container">
+  
   <div class="card">
-    <h1>Salut, c'est Mickael</h1>
-    <img src="images/moi-small.png" alt="Mickael">
-    <p id="introduction">J'adore le developpement web, la cuisine japonaise 🍜, les jeux video 👾 et le Badminton 🏸 . J'ai rejoins Le bootcamp du Wagon pour apprendre le Code.</p>
-    <a href="https://www.lewagon.com/fr" target="_blank" class="bouton-bleu">Découvrez Le Wagon 🚂</a>
+    <img src="images/moi-small.png" alt="Mickael" class="profile-img">
+    <h1>Salut 👋, c’est Mickael 😎</h1>
+    <p class="subtitle">Fullstack Developer & AI Specialist</p>
+    <p id="introduction">
+      Je construis des <strong>applications web augmentées par l’IA</strong>. 
+      Après une formation intensive au <strong>Wagon 🚂</strong>, je transforme des idées simples en produits intelligents avec Ruby on Rails et les LLM.
+    </p>
+    <div class="badge-container">
+      <span class="badge rails">Ruby on Rails</span>
+      <span class="badge js">JavaScript</span>
+      <span class="badge ai">LLM & Agents</span>
+    </div>
   </div>
+
   <div class="card">
-    <h2>All you need is code</h2>
-    <p>Geek tech depuis le lycée, j'ai toujours été savoir comment fonctionnent les choses. Apprendre le code est juste venu naturellement.</p>
+    <h2>🚀 Projets Phares</h2>
+    
+    <div class="project-item">
+      <h3>🧠 Padel Maestro</h3>
+      <p>Assistant IA pour des séances d'entraînement personnalisées de Padel.</p>
+      <small>Stack : Rails, OpenAI API, PostgreSQL</small>
+    </div>
+
+    <div class="project-item">
+      <h3>🌱 PokePlant</h3>
+      <p>Application collaborative pour prendre soin de ses plantes avec l'aide de l'IA.</p>
+      <small>Stack : Rails, StimulusJS, OpenAI</small>
+    </div>
+
+    <div class="project-item">
+      <h3>✍️ Tremic</h3>
+      <p>Blog dédié à la productivité et l'écosystème Apple.</p>
+      <a href="https://tremic.fr" target="_blank" class="bouton-bleu">Visiter le blog</a>
+    </div>
   </div>
+
   <div class="card">
-    <h2 class="follow">Retrouvez-moi sur les réseaux</h2>
+    <h2>🛠️ Stack Technique</h2>
+    <div class="tech-grid">
+      <div>
+        <h4>🤖 IA</h4>
+        <p>OpenAI, Claude Code, Agents IA</p>
+      </div>
+      <div>
+        <h4>⚙️ Backend</h4>
+        <p>Ruby on Rails, PostgreSQL</p>
+      </div>
+      <div>
+        <h4>🎨 Frontend</h4>
+        <p>JavaScript, Stimulus, Bootstrap</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2 class="follow">On reste en contact ?</h2>
     <ul class="list-inline">
       <li>
-        <a href="https://github.com/mtremauville" target="_blank" class="lien-blue reseau">
+        <a href="https://github.com/mtremauville" target="_blank" class="reseau">
           <i class="fa-brands fa-square-github"></i>
         </a>
       </li>
       <li>
-        <a href="https://www.linkedin.com/in/mickael-tremauville/" target="_blank" class="lien-blue reseau"><i class="fa-brands fa-square-linkedin"></i>
-      </a>
-    </li>
+        <a href="https://www.linkedin.com/in/mickael-tremauville/" target="_blank" class="reseau">
+          <i class="fa-brands fa-square-linkedin"></i>
+        </a>
+      </li>
       <li>
-        <a href="https://medium.com/" target="_blank" class="lien-blue reseau"><i class="fa-brands fa-medium"></i>
-      </a>
-    </li>
+        <a href="mailto:mickael.tremauville@gmail.com" class="reseau">
+          <i class="fa-solid fa-square-envelope"></i>
+        </a>
+      </li>
     </ul>
   </div>
+
 </div>
+
 </body>
 </html>
