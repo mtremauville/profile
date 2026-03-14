@@ -111,3 +111,51 @@ p {
   .container { width: 95%; }
   .list-inline { flex-direction: column; align-items: center; }
 }
+/* Alignement des Shields */
+.shields-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+.shields-row img {
+  height: 28px; /* Taille standard for-the-badge */
+  box-shadow: none; /* Enlève l'ombre portée des images normales */
+  border: none;
+  border-radius: 0;
+}
+
+/* Ajustements pour les sections de tech */
+.tech-section h3 {
+  font-size: 16px;
+  margin-top: 25px;
+  color: #9CA3AF;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Stats GitHub responsive */
+.stats-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 15px;
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.2);
+}
+
+/* Style spécifique pour les cartes de projets */
+.project-card {
+  border-left: 3px solid #2563EB;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 0 10px 10px 0;
+  text-align: left;
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #ffffff;
+}
