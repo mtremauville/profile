@@ -395,13 +395,11 @@ document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
 
 // ── Hamburger mobile ──
 function initHamburger() {
-  const btn     = document.getElementById('hamburger-btn');
-  const nav     = document.getElementById('sidebar-nav');
-  const sidebar = document.querySelector('.sidebar');
+  const btn = document.getElementById('hamburger-btn');
+  const nav = document.getElementById('sidebar-nav');
   if (!btn || !nav) return;
 
   function open() {
-    if (sidebar) nav.style.paddingTop = (sidebar.offsetHeight + 16) + 'px';
     nav.classList.add('open');
     btn.classList.add('open');
     btn.setAttribute('aria-expanded', 'true');

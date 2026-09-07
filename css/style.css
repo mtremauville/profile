@@ -1271,7 +1271,7 @@ section, footer, .ticker-wrapper { position: relative; z-index: 1; }
     justify-content: flex-start;
     align-items: flex-start;
     gap: 0;
-    padding: 24px 32px 40px;  /* padding-top ajusté par JS */
+    padding: 130px 32px 40px;
     transform: translateX(100%);
     transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: -8px 0 32px rgba(0,0,0,0.3);
