@@ -1360,6 +1360,22 @@ section, footer, .ticker-wrapper { position: relative; z-index: 1; }
   position: relative;
 }
 
+/* Page ouverte dans la game modal : on ne garde que la zone de jeu (pas la barre, le texte de présentation ni le case study) */
+.in-modal-frame .subpage-bar,
+.in-modal-frame .subpage-intro,
+.in-modal-frame .subpage-hint,
+.in-modal-frame .case-study {
+  display: none;
+}
+.in-modal-frame .subpage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+.in-modal-frame .subpage-stage { width: 100%; }
+
 .subpage-bar {
   display: flex;
   align-items: center;
@@ -1439,3 +1455,58 @@ section, footer, .ticker-wrapper { position: relative; z-index: 1; }
   flex-shrink: 0;
 }
 .case-study-points strong { color: var(--text); }
+
+/* ── Game modal (démos interactives lancées par-dessus la page) ── */
+.game-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.game-modal[hidden] { display: none; }
+.game-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+}
+.game-modal-panel {
+  position: relative;
+  width: min(900px, 100%);
+  height: min(720px, 100%);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+.game-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 1;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+.game-modal-close:hover { border-color: var(--accent-border); }
+.game-modal-frame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .game-modal { padding: 0; }
+  .game-modal-panel { width: 100%; height: 100%; border-radius: 0; }
+}

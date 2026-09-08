@@ -1,3 +1,8 @@
+// ── Sub-page chrome cachée quand la page tourne dans une iframe (game modal) ──
+if (window.self !== window.top) {
+  document.documentElement.classList.add('in-modal-frame');
+}
+
 // ── i18n ──
 const i18n = {
   fr: {
@@ -771,6 +776,42 @@ function initGithubCalendar() {
     });
 }
 
+// ── Game modal (démos interactives lancées par-dessus la page) ──
+function initGameModal() {
+  const modal   = document.getElementById('game-modal');
+  const backdrop = document.getElementById('game-modal-backdrop');
+  const closeBtn = document.getElementById('game-modal-close');
+  const frame     = document.getElementById('game-modal-frame');
+  const triggers  = document.querySelectorAll('[data-game-modal]');
+  if (!modal || !frame || !triggers.length) return;
+
+  function open(url) {
+    frame.src = url;
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+    closeBtn.focus();
+  }
+
+  function close() {
+    modal.hidden = true;
+    frame.src = '';
+    document.body.style.overflow = '';
+  }
+
+  triggers.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      open(link.dataset.gameModal);
+    });
+  });
+
+  closeBtn.addEventListener('click', close);
+  backdrop.addEventListener('click', close);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !modal.hidden) close();
+  });
+}
+
 // ── Init ──
 document.addEventListener('DOMContentLoaded', () => {
   setTheme(currentTheme);
@@ -781,6 +822,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initParticles();
   initContactForm();
   initGithubCalendar();
+  initGameModal();
 
   ['theme-toggle', 'theme-toggle-menu'].forEach(id => {
     const el = document.getElementById(id);

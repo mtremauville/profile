@@ -135,8 +135,8 @@ function initCubeRunner() {
   const RIGHT_KEYS = ['ArrowRight', 'd', 'D'];
   let heldTurn = null;
   window.addEventListener('keydown', (e) => {
-    if (LEFT_KEYS.includes(e.key)) heldTurn = 'left';
-    else if (RIGHT_KEYS.includes(e.key)) heldTurn = 'right';
+    if (LEFT_KEYS.includes(e.key)) { e.preventDefault(); heldTurn = 'left'; }
+    else if (RIGHT_KEYS.includes(e.key)) { e.preventDefault(); heldTurn = 'right'; }
   });
   window.addEventListener('keyup', (e) => {
     if (LEFT_KEYS.includes(e.key) && heldTurn === 'left') heldTurn = null;

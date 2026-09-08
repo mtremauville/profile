@@ -249,7 +249,7 @@
             <div class="project-row-body">
               <div class="project-row-header">
                 <h3>
-                  <a href="cube-runner.html">
+                  <a href="cube-runner.html" data-game-modal="cube-runner.html">
                     Cube Runner <i class="fa-solid fa-cube fa-xs"></i>
                   </a>
                 </h3>
@@ -593,6 +593,16 @@
       </footer>
 
     </main>
+  </div>
+
+  <div class="game-modal" id="game-modal" hidden>
+    <div class="game-modal-backdrop" id="game-modal-backdrop"></div>
+    <div class="game-modal-panel">
+      <button type="button" class="game-modal-close" id="game-modal-close" aria-label="Fermer">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <iframe id="game-modal-frame" class="game-modal-frame" title="Démo interactive" allow="autoplay"></iframe>
+    </div>
   </div>
 
   <script src="js/main.js"></script>
